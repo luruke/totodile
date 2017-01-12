@@ -7,7 +7,7 @@ A wild DOMElement appears!
 
 Totodile is a little JavaScript helper that helps you to create animation of DOMElement when they enter in the viewport.
 
-It uses [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) where supported, otherwise it uses a [polyfill](https://github.com/WICG/IntersectionObserver/tree/gh-pages/polyfill).
+It uses [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), so make sure to add a [polyfill](https://github.com/WICG/IntersectionObserver/tree/gh-pages/polyfill).
 
 ## Usage
 ```
