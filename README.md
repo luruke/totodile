@@ -10,14 +10,14 @@ Totodile is a little JavaScript helper that helps you to create animation of DOM
 It uses [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), so make sure to add a [polyfill](https://github.com/WICG/IntersectionObserver/tree/gh-pages/polyfill).
 
 ## Usage
-```
+```javascript
 new Totodile(HTMLElement | NodeList | Sting [, option = {}]);
 
 ```
 Totodile can be instanciated with or without new keyword.
 The first parameter can be a single `HTMLElement`, `NodeList` or a String selector.
 
-```
+```javascript
 new Totodile(document.querySelectorAll('div'), {
   prepare: function(el) {
     el.style.opacity = '0';
@@ -30,7 +30,7 @@ new Totodile(document.querySelectorAll('div'), {
 });
 ```
 
-```
+```javascript
 new Totodile('.card', {
   threshold: 0.5,
   delay: 200,
@@ -47,7 +47,7 @@ new Totodile('.card', {
 });
 ```
 
-```
+```javascript
 new Totodile(document.querySelector('.card'), {
   delay: 0,
   treshold: 0,
